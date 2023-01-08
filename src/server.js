@@ -63,7 +63,8 @@ router.post('/', async (request, env) => {
         });
       }
       case INVITE_COMMAND.name.toLowerCase(): {
-        //const applicationId = env.DISCORD_APPLICATION_ID;
+        const applicationId = env.DISCORD_APPLICATION_ID;
+        console.log(applicationId);
         const INVITE_URL = `https://awwbot.pages.dev/invite`;
         return new JsonResponse({
           type: 4,
