@@ -64,7 +64,7 @@ router.post('/', async (request, env) => {
       }
       case INVITE_COMMAND.name.toLowerCase(): {
         const applicationId = env.DISCORD_APPLICATION_ID;
-        const INVITE_URL = `https://discord.com/oauth2/authorize?client_id=${applicationId}&scope=applications.commands`;
+        const INVITE_URL = `https://awwbot.pages.dev/invite`;
         return new JsonResponse({
           type: 4,
           data: {
