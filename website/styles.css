@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --invite: #10d3a2;
+    --join: #5865F2;
+    --aww: #EB459E;
+    --cf_orange: #F48120;
+    --cf_yellow: #face3f;
+    --reddit-red: #ff4500;
+    --btn_border: rgb(169, 169, 169);
+}
+
+* {
+    font-family: 'Roboto';
+    background-color: #423442;
+}
+
+.heading {
+    font-size: 4rem;
+    color: var(--aww);
+}
+
+.about {
+    font-size: 22px;
+    color: var(--aww);
+}
+
+.about a {
+    color: var(--aww);
+}
+
+.about a:hover {
+    color: var(--reddit-red);
+    text-decoration: none;
+}
+
+.about code {
+    color: var(--cf_yellow);
+}
+
+.invite a {
+    font-size: 30px;
+    color: var(--invite);
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    border: 3px dotted var(--btn_border);
+}
+
+.invite a:hover {
+    font-size: 30px;
+    color: var(--invite);
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    border: 3px solid var(--invite);
+    text-decoration: none;
+}
+
+.join a {
+    font-size: 24px;
+    color: var(--join);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    border: 3px dotted var(--btn_border);
+}
+
+.join a:hover {
+    font-size: 24px;
+    color: var(--join);
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    border: 3px solid var(--join);
+    text-decoration: none;
+}
+
+.cf {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding: 13px;
+    color: var(--cf_yellow);
+    border-top: 2px solid var(--aww);
+    background-color: #382d38;
+}
+
+.cf a {
+    font-size: 16px;
+    color: var(--cf_orange);
+}
+
+.cf a:hover {
+    font-size: 16px;
+    color: var(--cf_yellow);
+    text-decoration: none;
+}
