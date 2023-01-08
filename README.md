@@ -4,33 +4,35 @@
 [![OSSAR](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml)
 [![ci](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml)
 
-<img style="border: #EB459E 3px solid" src="https://i.pinimg.com/originals/49/fc/d2/49fcd2b9e8a077d0e418795936e2daef.jpg">
+<p align='center'>
+<img height="300px" style="border: #EB459E 3px solid" src="https://github.com/itskdhere/Aww-Discord-BOT/blob/main/website/favicon.jpg">
+</p>
 
-
-<font size='3px'>
+<font size='5px'>
 <p align='center'>
 <b>What's this..?</b>😄
 </p>
 </font>
 
-**Aww BOT** brings the cuteness of [r/aww](https://www.reddit.com/r/aww/) straight to Discord Server. **Just use slash command: `/awwww` 😋** <br>
+**Aww BOT** brings the cuteness of [r/aww](https://www.reddit.com/r/aww/) straight to Discord Server. **Just use slash command: `/aww` 😋** <br>
 This BOT is Hosted on [⛅Cloudflare Workers](https://workers.cloudflare.com/)
 
-<!---->
-<br>
-<font size='5px'>
-<p align='center' style="border: #5865F2 2px solid">
-<a href="#" style='text-decoration: none'>
-<img width='25px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
-Add BOT To Your Server
+🌐[**Website**](https://awwbot.pages.dev/)
+
+<font size='8px'>
+<p style="border: #5865F2 2px solid">
+<a href="https://awwbot.pages.dev/invite" style='text-decoration: none'>
+<img width='17px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
+<b>Add BOT To Your Server</b>
 </a>
 </p>
-<p align='center' style="border: #5865F2 2px solid">
+<!--
+<p style="border: #5865F2 2px solid">
 <a href="#" style='text-decoration: none'>
-<img width='25px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
-Join Support Server
+<img width='17px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
+<b>Join Support Server</b>
 </a>
-</p>
+</p> -->
 </font>
 
 ### Resources used:
@@ -105,7 +107,7 @@ https://<CF_WORKER_NAME>.<CF_WORKER_SUBDOMAIN>.workers.dev
 
 **9. Finally 🎉**
 - Goto [Discord](https://discord.com/app)
-- Use the slash command `/awwww`
+- Use the slash command `/aww`
 
 Thats it... 😊<br>
 Wait.. 🤨 <br>
