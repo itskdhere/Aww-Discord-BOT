@@ -85,9 +85,10 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 0px;
-    padding: 13px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     color: var(--cf_yellow);
     border-top: 2px solid var(--aww);
     background-color: #382d38;
