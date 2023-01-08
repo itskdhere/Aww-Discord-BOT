@@ -4,7 +4,7 @@
  */
 
 export const AWW_COMMAND = {
-  name: 'awwww',
+  name: 'aww',
   description: 'Drop some cuteness on this channel.',
 };
 
