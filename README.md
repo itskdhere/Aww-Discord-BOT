@@ -4,10 +4,6 @@
 [![OSSAR](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml)
 [![ci](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml)
 
-<p align='center'>
-<img height="300px" style="border: #EB459E 3px solid" src="https://github.com/itskdhere/Aww-Discord-BOT/blob/main/website/favicon.jpg">
-</p>
-
 <font size='5px'>
 <p align='center'>
 <b>What's this..?</b>😄
@@ -22,7 +18,7 @@ This BOT is Hosted on [⛅Cloudflare Workers](https://workers.cloudflare.com/)
 <font size='8px'>
 <p style="border: #5865F2 2px solid">
 <a href="https://awwbot.pages.dev/invite" style='text-decoration: none'>
-<img width='17px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
+<img width='20px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
 <b>Add BOT To Your Server</b>
 </a>
 </p>
