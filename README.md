@@ -3,9 +3,19 @@
 [![CodeQL](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml)
 [![OSSAR](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml)
 [![ci](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml)
+<a href="https://awwbot.pages.dev/support" title="Join Support Server"><img alt="Discord" src="https://img.shields.io/discord/917792741054894131?color=%235865F2&label=Discord&logo=discord&logoColor=%23FFFFFF"></a>
+
+<br>
+<p align="center">
+<a href="https://awwbot.pages.dev/invite" title="Add Bot To Your Discord Server">
+<img alt="Add To Discord" src="https://img.shields.io/badge/Add%20BOT%20To%20Your%20Discord%20Server-EB459E?style=for-the-badge&logoColor=white&logo=discord">
+</a>
+</p>
+
+---
 
 <font size='5px'>
-<p align='center'>
+<p>
 <b>What's this..?</b>😄
 </p>
 </font>
@@ -13,8 +23,9 @@
 **Aww BOT** brings the cuteness of [r/aww](https://www.reddit.com/r/aww/) straight to Discord Server. **Just use slash command: `/aww` 😋** <br>
 This BOT is Hosted on [⛅Cloudflare Workers](https://workers.cloudflare.com/)
 
-🌐[**Website**](https://awwbot.pages.dev/)
 
+<!--
+🌐[**Website**](https://awwbot.pages.dev/)
 <font size='8px'>
 <p style="border: #5865F2 2px solid">
 <a href="https://awwbot.pages.dev/invite" style='text-decoration: none'>
@@ -22,14 +33,14 @@ This BOT is Hosted on [⛅Cloudflare Workers](https://workers.cloudflare.com/)
 <b>Add BOT To Your Server</b>
 </a>
 </p>
-<!--
 <p style="border: #5865F2 2px solid">
 <a href="#" style='text-decoration: none'>
 <img width='17px' src='https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg'>
 <b>Join Support Server</b>
 </a>
-</p> -->
-</font>
+</p>
+</font> 
+-->
 
 ### Resources used:
 - [Discord Interactions API](https://discord.com/developers/docs/interactions/receiving-and-responding)
@@ -108,7 +119,7 @@ https://<CF_WORKER_NAME>.<CF_WORKER_SUBDOMAIN>.workers.dev
 Thats it... 😊<br>
 Wait.. 🤨 <br>
 Still not ?😕 Facing Problems ? 😭<br>
-See [Issues](https://github.com/itskdhere/Aww-Discord-BOT/issues) **or,** [Create New Issue](https://github.com/itskdhere/Aww-Discord-BOT/issues/new) **or,** [Join My Discord Server](#)
+See [Issues](https://github.com/itskdhere/Aww-Discord-BOT/issues) **or,** [Create New Issue](https://github.com/itskdhere/Aww-Discord-BOT/issues/new) **or,** [Join My Discord Server](https://awwbot.pages.dev/support)
 
 
 ---
@@ -165,7 +176,7 @@ This is going to bounce requests off of an external endpoint, and forward them t
 This is the process we'll use for local testing and development. When you've published your bot to Cloudflare, you will heve to update this field to use your `Cloudflare Worker URL`.
 
 > Facing Issues ? 😐<br>
-See [Issues](https://github.com/itskdhere/Aww-Discord-BOT/issues) **or,** [Create New Issue](https://github.com/itskdhere/Aww-Discord-BOT/issues/new) **or,** [Join My Discord Server](#)
+See [Issues](https://github.com/itskdhere/Aww-Discord-BOT/issues) **or,** [Create New Issue](https://github.com/itskdhere/Aww-Discord-BOT/issues/new) **or,** [Join My Discord Server](https://awwbot.pages.dev/support)
 
 
 ---

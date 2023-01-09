@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Server</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <style>
+        .heading {
+            font-size: 3rem;
+            color: #EB459E;
+        }
+    </style>
+</head>
+
+<body bgcolor="#423442">
+    <h1 align='center' class="heading">
+        <b>Redirecting...</b>
+    </h1>
+
+    <script defer>
+        const invite_uri = 'https://redirect.itskdhere.workers.dev/server/support/invite';
+        function redirect() {
+            window.location = `${invite_uri}`;
+        }
+        setTimeout('redirect()', 1000);
+    </script>
+</body>
+
+</html>
