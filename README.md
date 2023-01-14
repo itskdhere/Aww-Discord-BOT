@@ -11,6 +11,9 @@
 <img alt="Add To Discord" src="https://img.shields.io/badge/Add%20BOT%20To%20Your%20Discord%20Server-EB459E?style=for-the-badge&logoColor=white&logo=discord">
 </a>
 </p>
+<p align="center">
+<img src="https://awwbot.pages.dev/aww-logo.png" alt="meow">
+</p>
 
 ---
 
