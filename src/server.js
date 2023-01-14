@@ -28,7 +28,6 @@ const router = Router();
 /**
  * A simple :wave: hello page to verify the worker is working.
  */
-
 router.get('/', (request, env) => {
   return new Response(`👋 ${env.DISCORD_APPLICATION_ID}`);
 });
@@ -41,9 +40,7 @@ router.get('/', (request, env) => {
 
 router.post('/', async (request, env) => {
   const message = await request.json();
-
   console.log(message);
-
   if (message.type === InteractionType.PING) {
     // The `PING` message is used during the initial webhook handshake, and is
     // required to configure the webhook in the developer portal.
@@ -66,7 +63,6 @@ router.post('/', async (request, env) => {
           },
         });
       }
-
       case INVITE_COMMAND.name.toLowerCase(): {
         const applicationId = env.DISCORD_APPLICATION_ID;
         console.log(applicationId);
@@ -79,7 +75,6 @@ router.post('/', async (request, env) => {
           },
         });
       }
-
       default:
         console.error('Unknown Command');
         return new JsonResponse({ error: 'Unknown Type' }, { status: 400 });
@@ -87,10 +82,8 @@ router.post('/', async (request, env) => {
   }
 
   console.error('Unknown Type');
-
   return new JsonResponse({ error: 'Unknown Type' }, { status: 400 });
 });
-
 router.all('*', () => new Response('Not Found.', { status: 404 }));
 
 export default {
@@ -101,16 +94,12 @@ export default {
    * @param {*} env A map of key/value pairs with env vars and secrets from the cloudflare env.
    * @returns
    */
-
   async fetch(request, env) {
     if (request.method === 'POST') {
       // Using the incoming headers, verify this request actually came from discord.
       const signature = request.headers.get('x-signature-ed25519');
-
       const timestamp = request.headers.get('x-signature-timestamp');
-
       console.log(signature, timestamp, env.DISCORD_PUBLIC_KEY);
-
       const body = await request.clone().arrayBuffer();
       const isValidRequest = verifyKey(
         body,
@@ -118,7 +107,6 @@ export default {
         timestamp,
         env.DISCORD_PUBLIC_KEY
       );
-
       if (!isValidRequest) {
         console.error('Invalid Request');
         return new Response('Bad request signature.', { status: 401 });
