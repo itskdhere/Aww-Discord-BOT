@@ -15,11 +15,23 @@
     background-color: #423442;
 }
 
-.heading {
+.heading u {
     font-size: 3rem;
     color: var(--aww);
 }
 
+#cat {
+    width: 6rem;
+    transform: translateY(20px);
+}
+
+#cat:hover {
+    width: 6rem;
+    transform: translateY(20px);
+    border: 1px dashed var(--aww);
+    border-radius: 15px;
+}
+    
 .about {
     font-size: 22px;
     color: var(--aww);
