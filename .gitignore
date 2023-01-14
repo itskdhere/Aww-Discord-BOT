@@ -1,6 +1,7 @@
 # Local
 tmp/
 temp/
+.github/info.txt
 
 # Logs
 logs
