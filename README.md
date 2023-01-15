@@ -8,12 +8,10 @@
 <br>
 <p align="center">
 <a href="https://awwbot.pages.dev/invite" title="Add Bot To Your Discord Server">
-<img alt="Add To Discord" src="https://img.shields.io/badge/Add%20BOT%20To%20Your%20Discord%20Server-EB459E?style=for-the-badge&logoColor=white&logo=discord">
-</a>
-</p>
+<img alt="Add To Discord" src="https://img.shields.io/badge/Add%20BOT%20To%20Your%20Discord%20Server-EB459E?style=for-the-badge&logoColor=white&logo=discord"></a></p>
 <p align="center">
-<img src="https://awwbot.pages.dev/aww-logo.png" alt="meow">
-</p>
+<a href="https://awwbot.pages.dev" title="Visit WebSite">
+<img src="https://awwbot.pages.dev/favicon.png" alt="meow"></a></p>
 
 ---
 
@@ -188,6 +186,7 @@ See [Issues](https://github.com/itskdhere/Aww-Discord-BOT/issues) **or,** [Creat
 ##### 📝 License: [MIT](https://github.com/itskdhere/Aww-Discord-BOT/blob/main/LICENSE)
 ##### 💡 Initial Inspiration:  [discord/cloudflare-sample-app](https://github.com/discord/cloudflare-sample-app)
 ##### ✒ The tutorial for building Aww BOT is in the [discord developer documentation](https://discord.com/developers/docs/tutorials/hosting-on-cloudflare-workers)
+##### 🎨 Cat <a href="https://www.freepik.com/free-vector/set-vector-cute-cartoonish-cats-isolated-white-background_26373379.htm#query=cat%20svg&position=6&from_view=search&track=sph">Image by callmetak</a> on Freepik
 
 <br>
 <font size='3px'>
