@@ -25,11 +25,28 @@
     transform: translateY(20px);
 }
 
-#cat:hover {
-    width: 6rem;
-    transform: translateY(20px);
-    border: 1px dashed var(--aww);
-    border-radius: 15px;
+#octocat {
+    width: 4rem;
+    transform: translateY(23px);
+}
+
+#logo img#cat {
+    display: inline-block;
+}
+
+#logo img#octocat {
+    display: none;
+}
+
+#logo:hover img#cat {
+    display: none;
+}
+
+#logo:hover img#octocat {
+    display: inline-block;
+    margin-left: 16px;
+    border: 8px solid black;
+    border-radius: 69px;
 }
     
 .about {
