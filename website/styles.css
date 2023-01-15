@@ -117,7 +117,7 @@
     font-size: 15px;
     margin-bottom: 0px;
     padding-top: 13px;
-    padding-bottom: 13px;
+    padding-bottom: 23px;
     color: var(--cf_yellow);
     border-top: 2px solid var(--aww);
     background-color: #382d38;
@@ -130,6 +130,29 @@
 
 .cf a:hover {
     font-size: 16px;
+    color: var(--cf_yellow);
+    text-decoration: none;
+}
+
+.img-credit {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    color: var(--cf_yellow);
+    background-color: #382d38;
+}
+
+.img-credit a {
+    font-size: 13px;
+    color: var(--cf_orange);
+}
+
+.img-credit a:hover {
+    font-size: 13px;
     color: var(--cf_yellow);
     text-decoration: none;
 }
