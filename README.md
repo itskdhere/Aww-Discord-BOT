@@ -13,7 +13,7 @@
 </p>
 <p align="center">
 <a href="https://awwbot.pages.dev" title="Visit WebSite">
-<img src="https://awwbot.pages.dev/favicon.png" alt="meow"></a></p>
+<img src="https://awwbot.pages.dev/svg/cute_cat.svg" alt="meow"></a></p>
 
 ---
 
