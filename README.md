@@ -1,19 +1,44 @@
-# Aww-Discord-BOT
+<h1 align="center">
+Aww-Discord-BOT
+</h1>
 
-[![CodeQL](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml)
-[![OSSAR](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml)
-[![ci](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml)
-![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m793480164-7f48a4946f537990dd03a397?label=Bot%20Uptime)
+<p align="center">
+<a href="https://awwbot.pages.dev" title="Visit WebSite">
+<img src="https://awwbot.pages.dev/svg/cute_cat.svg" alt="meow">
+</a>
+</p>
+
+<p align="center">
+<a href="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml" title="CodeQL">
+<img src="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml/badge.svg" alt="CodeQL" >
+</a>
+<a href="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml" title="OSSAR">
+<img src="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg" alt="OSSAR" >
+</a>
+<a href="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml" title="CI">
+<img src="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg" alt="CI" >
+</a>
+<a href="" title="">
+<img src="https://img.shields.io/uptimerobot/ratio/7/m793480164-7f48a4946f537990dd03a397?label=Bot%20Uptime" alt="Up-Time" >
+</a>
+</p>
 
 <p align="center">
 <a href="https://awwbot.pages.dev/invite" title="Add Bot To Your Discord Server">
 <img alt="Add To Discord" src="https://img.shields.io/badge/Add%20BOT%20To%20Your%20Discord%20Server-EB459E?style=for-the-badge&logoColor=white&logo=discord">
-</a><br>
-<a href="https://awwbot.pages.dev/support" title="Join Support Server"><img alt="Discord" src="https://img.shields.io/discord/917792741054894131?color=%235865F2&label=Discord&logo=discord&logoColor=%23FFFFFF&style=for-the-badge"></a>
+</a>
+<br><br>
+<a href="https://awwbot.pages.dev/support" title="Join Support Server">
+<img alt="Discord" src="https://img.shields.io/discord/917792741054894131?color=%235865F2&label=Discord&logo=discord&logoColor=%23FFFFFF&style=for-the-badge">
+</a>
 </p>
-<p align="center">
-<a href="https://awwbot.pages.dev" title="Visit WebSite">
-<img src="https://awwbot.pages.dev/svg/cute_cat.svg" alt="meow"></a></p>
+
+<!--
+[![CodeQL](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml)
+[![OSSAR](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml)
+[![ci](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg)](https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml)
+![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m793480164-7f48a4946f537990dd03a397?label=Bot%20Uptime)
+-->
 
 ---
 
