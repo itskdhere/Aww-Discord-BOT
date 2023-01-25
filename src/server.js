@@ -71,7 +71,6 @@ router.post('/', async (request, env) => {
           type: 4,
           data: {
             content: INVITE_URL,
-            flags: 64,
           },
         });
       }
