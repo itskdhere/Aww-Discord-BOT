@@ -19,7 +19,7 @@ Aww-Discord-BOT
 <img src="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ci.yaml/badge.svg" alt="CI" >
 </a>
 <a href="" title="">
-<img src="https://img.shields.io/uptimerobot/ratio/7/m793480164-7f48a4946f537990dd03a397?label=Bot%20Uptime" alt="Up-Time" >
+<img src="https://img.shields.io/uptimerobot/ratio/7/m793605180-c9948f4473c7bb729cb6f66d?label=Bot%20Uptime" alt="Up-Time" >
 </a>
 </p>
 
