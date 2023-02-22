@@ -68,7 +68,7 @@
 }
 
 .invite a {
-    font-size: 35px;
+    font-size: 30px;
     color: var(--invite);
     padding: 15px;
     margin-top: 50px;
@@ -78,7 +78,7 @@
 }
 
 .invite a:hover {
-    font-size: 35px;
+    font-size: 30px;
     color: var(--invite);
     padding: 15px;
     margin-top: 50px;
