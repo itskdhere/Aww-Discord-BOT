@@ -68,7 +68,7 @@
 }
 
 .invite a {
-    font-size: 30px;
+    font-size: 35px;
     color: var(--invite);
     padding: 15px;
     margin-top: 50px;
@@ -78,7 +78,7 @@
 }
 
 .invite a:hover {
-    font-size: 30px;
+    font-size: 35px;
     color: var(--invite);
     padding: 15px;
     margin-top: 50px;
@@ -89,24 +89,62 @@
 }
 
 .join a {
-    font-size: 24px;
+    font-size: 21px;
     color: var(--join);
     padding: 10px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     border-radius: 35px;
     border: 3px dotted var(--btn_border);
 }
 
 .join a:hover {
-    font-size: 24px;
+    font-size: 21px;
     color: var(--join);
     padding: 10px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     border-radius: 35px;
     border: 3px solid var(--join);
     text-decoration: none;
+}
+
+.below_join a {
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    border: 3px dotted var(--btn_border);
+}
+
+.below_join a:hover {
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    text-decoration: none;
+}
+
+.status {
+    color: rgba(59,214,113,255);
+    margin-right: 11px;
+}
+
+.status:hover{
+    color: rgba(59,214,113,255);
+    margin-right: 11px;
+    border: 3px solid rgba(59,214,113,255);
+}
+
+.top_gg {
+    color: #FF3366;
+}
+
+.top_gg:hover{
+    color: #FF3366;
+    border: 3px solid #FF3366;
 }
 
 .cf {
