@@ -15,6 +15,10 @@
     background-color: #423442;
 }
 
+.heading {
+    margin-top: 0px;
+}
+
 .heading u {
     font-size: 3rem;
     color: var(--aww);
@@ -48,7 +52,7 @@
     border: 8px solid black;
     border-radius: 69px;
 }
-    
+
 .about {
     font-size: 22px;
     color: var(--aww);
@@ -128,21 +132,21 @@
 }
 
 .status {
-    color: rgba(59,214,113,255);
+    color: rgba(59, 214, 113, 255);
     margin-right: 11px;
 }
 
-.status:hover{
-    color: rgba(59,214,113,255);
+.status:hover {
+    color: rgba(59, 214, 113, 255);
     margin-right: 11px;
-    border: 3px solid rgba(59,214,113,255);
+    border: 3px solid rgba(59, 214, 113, 255);
 }
 
 .top_gg {
     color: #FF3366;
 }
 
-.top_gg:hover{
+.top_gg:hover {
     color: #FF3366;
     border: 3px solid #FF3366;
 }
@@ -154,8 +158,8 @@
     width: 100%;
     font-size: 15px;
     margin-bottom: 0px;
-    padding-top: 13px;
-    padding-bottom: 23px;
+    padding-top: 5px;
+    padding-bottom: 40px;
     color: var(--cf_yellow);
     border-top: 2px solid var(--aww);
     background-color: #382d38;
@@ -179,7 +183,7 @@
     width: 100%;
     font-size: 13px;
     margin-bottom: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 23px;
     color: var(--cf_yellow);
     background-color: #382d38;
 }
@@ -192,5 +196,28 @@
 .img-credit a:hover {
     font-size: 13px;
     color: var(--cf_yellow);
+    text-decoration: none;
+}
+
+.legal {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    color: var(--aww);
+    background-color: #382d38;
+}
+
+.legal a {
+    font-size: 13px;
+    color: var(--aww);
+}
+
+.legal a:hover {
+    font-size: 13px;
+    color: var(--invite);
     text-decoration: none;
 }
