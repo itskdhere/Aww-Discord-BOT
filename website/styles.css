@@ -59,12 +59,13 @@
 }
 
 .about a {
-    color: var(--aww);
+    color: var(--reddit-red);
+    text-decoration: none;
 }
 
 .about a:hover {
-    color: var(--reddit-red);
-    text-decoration: none;
+    color: var(--cf_orange);
+    text-decoration: underline;
 }
 
 .about code {
@@ -168,12 +169,14 @@
 .cf a {
     font-size: 16px;
     color: var(--cf_orange);
+    background-color: #382d38;
 }
 
 .cf a:hover {
     font-size: 16px;
     color: var(--cf_yellow);
     text-decoration: none;
+    background-color: #382d38;
 }
 
 .img-credit {
@@ -191,12 +194,14 @@
 .img-credit a {
     font-size: 13px;
     color: var(--cf_orange);
+    background-color: #382d38;
 }
 
 .img-credit a:hover {
     font-size: 13px;
     color: var(--cf_yellow);
     text-decoration: none;
+    background-color: #382d38;
 }
 
 .legal {
@@ -214,10 +219,55 @@
 .legal a {
     font-size: 13px;
     color: var(--aww);
+    background-color: #382d38;
 }
 
 .legal a:hover {
     font-size: 13px;
     color: var(--invite);
     text-decoration: none;
+    background-color: #382d38;
+}
+
+.legal-h1 {
+    font-size: 3rem;
+    color: var(--aww);
+}
+
+.legal-ol {
+    font-size: 1.5rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: var(--cf_orange);
+}
+
+.legal-ol li {
+    margin-bottom: 20px;
+}
+
+.legal-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: var(--join);
+    border-top: 2px solid var(--aww);
+    background-color: #382d38;
+}
+
+.legal-nav a {
+    font-size: 15px;
+    color: var(--cf_yellow);
+    background-color: #382d38;
+}
+
+.legal-nav a:hover {
+    font-size: 15px;
+    color: var(--aww);
+    text-decoration: none;
+    background-color: #382d38;
 }
