@@ -1,6 +1,7 @@
 # Local
 tmp/
 temp/
+data/
 src/
 .github/info.txt
 
