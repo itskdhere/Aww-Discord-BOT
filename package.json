@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node .",
     "dev": "node --watch .",
-    "prod": "pm2 start . --name aww-bot"
+    "prod": "pm2 start src/index.js --name aww-bot"
   },
   "dependencies": {
     "axios": "^1.5.1",
