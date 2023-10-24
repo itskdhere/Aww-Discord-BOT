@@ -1,8 +1,8 @@
-import { Client, Routes, REST, GatewayIntentBits, EmbedBuilder, WebhookClient, ActivityType } from 'discord.js';
-import http from 'http';
+import { Client, Routes, REST, GatewayIntentBits, EmbedBuilder, ActivityType } from 'discord.js';
 import axios from 'axios';
 import chalk from 'chalk';
 import dotenv from 'dotenv';
+import express from 'express';
 
 dotenv.config();
 
@@ -258,9 +258,18 @@ async function main() {
     }
 }
 
+if (process.env.HTTP_SERVER === 'true') {
+    const port = process.env.PORT || 7860;
 
-if (process.env.HTTP_SERVER == 'true') {
-    http.createServer((req, res) => res.end('BOT is Up && Running..!!')).listen(process.env.PORT);
+    const server = express();
+
+    server.get('/*', (req, res) => {
+        res.send('Aww Bot Is Online 🟢');
+    });
+
+    server.listen(port, () => {
+        console.log(`${chalk.greenBright('Listening On Port')} ${chalk.greenBright.bold(port)}\n${chalk.magentaBright('Visit:')} ${chalk.blue('http://localhost:' + port)}`);
+    });
 }
 
 setInterval(() => {
@@ -273,7 +282,6 @@ setInterval(() => {
                 console.warn(error);
             }
         });
-
-}, 30000);
+}, 30 * 1000); // 30s
 
 main();

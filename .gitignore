@@ -1,9 +1,6 @@
 # Local
-tmp/
 temp/
-data/
-src/log.js
-.github/info.txt
+tmp/
 
 # Logs
 logs

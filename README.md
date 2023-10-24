@@ -34,7 +34,57 @@ Aww-Discord-BOT
 ---
 
 ## Self-Hosting Guide:
- Commming Soon 🚧
+
+### Setup:
+
+- Clone The Repository:
+```bash
+git clone https://github.com/itskdhere/Aww-Discord-BOT
+```
+
+- Navigate To The Directory:
+```bash
+cd Aww-Discord-BOT
+```
+
+- Copy `.env.example` To `.env`:
+```bash
+cp .env.example .env
+```
+
+- Edit `.env` File:
+```bash
+nano .env
+```
+
+### Run:
+
+#### Using Docker:
+
+- Build:
+```bash
+docker build -t itskdhere/aww:2.1.1 .
+```
+
+- Run:
+```bash
+docker run -d --name aww itskdhere/aww:2.1.1
+```
+
+#### Without Using Docker:
+- Install Dependencies:
+```bash
+npm install
+```
+- Run The Bot:
+```bash
+npm run start
+```
+or, Run In Background:
+```bash
+npm i pm2 -g
+npm run start
+```
 
 ---
 ## Others:
