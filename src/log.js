@@ -29,7 +29,7 @@ async function commandLogger(interaction, cmdName) {
     const commandLogEmbed = new EmbedBuilder()
         .setAuthor({
             name: "aww log",
-            iconURL: "https://awwbot.pages.dev/log-log-circle.png",
+            iconURL: "https://awwbot.pages.dev/img/log.png",
         })
         .setTitle("**__Command Logs__**")
         .setDescription(`**Server Time:**\n*${new Date()}*\n\n**__Info:__**`)
