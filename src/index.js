@@ -32,55 +32,40 @@ const commands = [
 ];
 
 async function initDiscordCommands() {
-
     const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_BOT_TOKEN);
 
     try {
-
         console.log('Started refreshing application commands (/)');
-
         await rest.put(Routes.applicationCommands(process.env.DISCORD_CLIENT_ID), { body: commands })
             .then(() => { console.log('Successfully reloaded application commands (/)') })
             .catch(e => console.log(chalk.red(e)));
 
         console.log('Connecting to Discord Gateway...');
-
     } catch (error) {
-
         console.log(chalk.red(error));
-
     }
 }
 
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.GuildIntegrations,
+        GatewayIntentBits.DirectMessages
+    ]
+});
+
 async function main() {
-
     await initDiscordCommands().catch(e => { console.log(e) });
-
-    const client = new Client({
-        intents: [
-            GatewayIntentBits.Guilds,
-            GatewayIntentBits.GuildMessages,
-            GatewayIntentBits.GuildIntegrations,
-            GatewayIntentBits.DirectMessages
-        ]
-    });
-
-
-    client.login(process.env.DISCORD_BOT_TOKEN).catch(e => console.log(chalk.red(e)));
-
 
     client.once('ready', () => {
         console.log(`Logged in as ${client.user.tag}`);
         console.log(chalk.greenBright('Connected to Discord Gateway'));
         console.log(new Date());
-
         client.user.setStatus('online');
-        client.user.setActivity("/aww & /help", { type: ActivityType.Playing });
     });
 
-
     client.on("interactionCreate", async interaction => {
-
         if (!interaction.isChatInputCommand()) return;
 
         switch (interaction.commandName) {
@@ -101,6 +86,9 @@ async function main() {
         }
     });
 
+    client
+        .login(process.env.DISCORD_BOT_TOKEN)
+        .catch(e => console.log(chalk.red(e)));
 
     async function ping_Interaction_Handler(interaction) {
         const userName = interaction.user.tag;
@@ -150,7 +138,6 @@ async function main() {
         await commandLogger(interaction, "ping");
     }
 
-
     async function help_Interaction_Handler(interaction) {
         const userName = interaction.user.tag;
         const userAvatar = interaction.user.displayAvatarURL();
@@ -175,7 +162,6 @@ async function main() {
         await commandLogger(interaction, "help");
     }
 
-
     async function invite_Interaction_Handler(interaction) {
         const userName = interaction.user.tag;
         const userAvatar = interaction.user.displayAvatarURL();
@@ -199,7 +185,6 @@ async function main() {
 
         await commandLogger(interaction, "invite");
     }
-
 
     async function aww_Interaction_Handler(interaction) {
         const userName = interaction.user.tag;
@@ -273,6 +258,8 @@ if (process.env.HTTP_SERVER === 'true') {
 }
 
 setInterval(() => {
+    client.user.setActivity("/aww & /help", { type: ActivityType.Playing });
+
     axios
         .get('https://discord.com/api/v10')
         .catch(error => {
