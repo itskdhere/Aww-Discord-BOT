@@ -63,6 +63,7 @@ async function main() {
         console.log(chalk.greenBright('Connected to Discord Gateway'));
         console.log(new Date());
         client.user.setStatus('online');
+        client.user.setActivity("/aww & /help", { type: ActivityType.Playing });
     });
 
     client.on("interactionCreate", async interaction => {
