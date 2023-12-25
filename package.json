@@ -1,6 +1,6 @@
 {
   "name": "aww-discord-bot",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Aww Bot brings the cuteness of \"r/aww\" straight to Discord Servers",
   "author": "itskdhere",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "prod": "pm2 start src/index.js --name aww-bot"
   },
   "dependencies": {
-    "axios": "^1.6.0",
+    "axios": "^1.6.2",
     "chalk": "^5.3.0",
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",

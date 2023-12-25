@@ -63,12 +63,12 @@ nano .env
 
 - Build:
 ```bash
-docker build -t itskdhere/aww:2.1.1 .
+docker build -t itskdhere/aww:2.1.2 .
 ```
 
 - Run:
 ```bash
-docker run -d --name aww itskdhere/aww:2.1.1
+docker run -d --name aww itskdhere/aww:2.1.2
 ```
 
 #### Without Using Docker:
