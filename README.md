@@ -68,7 +68,7 @@ docker build -t itskdhere/aww:2.1.3 .
 
 - Run:
 ```bash
-docker run -d --name aww itskdhere/aww:2.1.3
+docker run -d -p 7860:7860 --name aww itskdhere/aww:2.1.3
 ```
 
 #### Without Using Docker:
