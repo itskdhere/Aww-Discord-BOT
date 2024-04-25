@@ -191,9 +191,9 @@ async function main() {
         const userName = interaction.user.tag;
         const userAvatar = interaction.user.displayAvatarURL();
 
-        await interaction.reply({ content: `Fetching..🐈` });
+        await interaction.reply({ content: `Fetching...🐈` });
 
-        const url = await getRedditPost();
+        const url = await getRedditPost(interaction);
 
         const awwEmbed = new EmbedBuilder()
             .setAuthor({
@@ -220,15 +220,12 @@ async function main() {
         await commandLogger(interaction, "aww");
     }
 
-    async function getRedditPost() {
+    async function getRedditPost(interaction) {
         const response = await axios.get('https://www.reddit.com/r/aww/hot.json').catch(async (e) => {
+            interaction.editReply({ content: `❌ Reddit API Error: Request Blocked.\nTrying Another Source...🐈` });
             console.log(chalk.red(e));
-            return await getCatApiImg();
+            return await getCatOrDogRandomly();
         });
-
-        if (response.status !== 200) {
-            return await getCatApiImg();
-        }
 
         const data = await response.data;
         const posts = data.data.children.map((post) => {
@@ -246,6 +243,15 @@ async function main() {
         return randomPost;
     }
 
+    async function getCatOrDogRandomly() {
+        const random = Math.floor(Math.random() * 2);
+        if (random === 0) {
+            return await getCatApiImg();
+        } else {
+            return await getDogApiImg();
+        }
+    }
+
     async function getCatApiImg() {
         const response = await axios.get('https://api.thecatapi.com/v1/images/search', {
             headers: {
@@ -253,12 +259,8 @@ async function main() {
             }
         }).catch(async (e) => {
             console.log(chalk.red(e));
-            return await getDogApiImg();
+            return "https://awwbot.pages.dev/img/aww-logo.png";
         });
-
-        if (response.status !== 200) {
-            return await getDogApiImg();
-        }
 
         const data = await response.data;
         const imgUrl = data[0].url;
@@ -274,10 +276,6 @@ async function main() {
             console.log(chalk.red(e));
             return "https://awwbot.pages.dev/img/aww-logo.png";
         });
-
-        if (response.status !== 200) {
-            return "https://awwbot.pages.dev/img/aww-logo.png";
-        }
 
         const data = await response.data;
         const imgUrl = data[0].url;
