@@ -193,7 +193,7 @@ async function main() {
 
         await interaction.reply({ content: `Fetching..🐈` });
 
-        const url = await getCuteUrl();
+        const url = await getRedditPost();
 
         const awwEmbed = new EmbedBuilder()
             .setAuthor({
@@ -220,11 +220,12 @@ async function main() {
         await commandLogger(interaction, "aww");
     }
 
-    async function getCuteUrl() {
-        const response = await fetch('https://www.reddit.com/r/aww/hot.json');
-
-        const data = await response.json();
-
+    async function getRedditPost() {
+        const response = await axios.get('https://www.reddit.com/r/aww/hot.json');
+        if(response.status !== 200) {
+            return await getCatApiImg();
+        }
+        const data = await response.data;
         const posts = data.data.children.map((post) => {
             if (post.is_gallery) {
                 return '';
@@ -235,12 +236,37 @@ async function main() {
                 post.data?.url
             );
         }).filter((post) => !!post);
-
         const randomIndex = Math.floor(Math.random() * posts.length);
-
         const randomPost = posts[randomIndex];
-
         return randomPost;
+    }
+
+    async function getCatApiImg() {
+        const response = await axios.get('https://api.thecatapi.com/v1/images/search', {
+            headers: {
+                'x-api-key': process.env.CAT_API_KEY
+            }
+        });
+        if(response.status !== 200) {
+            return await getDogApiImg();
+        }
+        const data = await response.data;
+        const imgUrl = data[0].url;
+        return imgUrl;
+    }
+
+    async function getDogApiImg() {
+        const response = await axios.get('https://api.thedogapi.com/v1/images/search', {
+            headers: {
+                'x-api-key': process.env.DOG_API_KEY
+            }
+        });
+        if(response.status !== 200) {
+            return "https://awwbot.pages.dev/img/aww-logo.png"
+        }
+        const data = await response.data;
+        const imgUrl = data[0].url;
+        return imgUrl;
     }
 }
 
