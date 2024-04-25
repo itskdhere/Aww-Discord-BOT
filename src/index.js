@@ -222,7 +222,7 @@ async function main() {
 
     async function getRedditPost(interaction) {
         const response = await axios.get('https://www.reddit.com/r/aww/hot.json').catch(async (e) => {
-            interaction.editReply({ content: `❌ Reddit API Error: Request Blocked.\nTrying Another Source...🐈` });
+            await interaction.editReply({ content: `❌ Reddit API Error: Request Blocked.\nTrying Another Source...🐈` });
             console.log(chalk.red(e));
             return await getCatOrDogRandomly();
         });
@@ -257,7 +257,7 @@ async function main() {
             headers: {
                 'x-api-key': process.env.CAT_API_KEY
             }
-        }).catch(async (e) => {
+        }).catch((e) => {
             console.log(chalk.red(e));
             return "https://awwbot.pages.dev/img/aww-logo.png";
         });
@@ -272,7 +272,7 @@ async function main() {
             headers: {
                 'x-api-key': process.env.DOG_API_KEY
             }
-        }).catch(async (e) => {
+        }).catch((e) => {
             console.log(chalk.red(e));
             return "https://awwbot.pages.dev/img/aww-logo.png";
         });
