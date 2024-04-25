@@ -221,10 +221,15 @@ async function main() {
     }
 
     async function getRedditPost() {
-        const response = await axios.get('https://www.reddit.com/r/aww/hot.json');
-        if(response.status !== 200) {
+        const response = await axios.get('https://www.reddit.com/r/aww/hot.json').catch(async (e) => {
+            console.log(chalk.red(e));
+            return await getCatApiImg();
+        });
+
+        if (response.status !== 200) {
             return await getCatApiImg();
         }
+
         const data = await response.data;
         const posts = data.data.children.map((post) => {
             if (post.is_gallery) {
@@ -246,10 +251,15 @@ async function main() {
             headers: {
                 'x-api-key': process.env.CAT_API_KEY
             }
+        }).catch(async (e) => {
+            console.log(chalk.red(e));
+            return await getDogApiImg();
         });
-        if(response.status !== 200) {
+
+        if (response.status !== 200) {
             return await getDogApiImg();
         }
+
         const data = await response.data;
         const imgUrl = data[0].url;
         return imgUrl;
@@ -260,10 +270,15 @@ async function main() {
             headers: {
                 'x-api-key': process.env.DOG_API_KEY
             }
+        }).catch(async (e) => {
+            console.log(chalk.red(e));
+            return "https://awwbot.pages.dev/img/aww-logo.png";
         });
-        if(response.status !== 200) {
-            return "https://awwbot.pages.dev/img/aww-logo.png"
+
+        if (response.status !== 200) {
+            return "https://awwbot.pages.dev/img/aww-logo.png";
         }
+
         const data = await response.data;
         const imgUrl = data[0].url;
         return imgUrl;
