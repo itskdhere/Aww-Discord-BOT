@@ -227,6 +227,7 @@ async function main() {
 
         if (response?.status !== 200) {
             await interaction.editReply({ content: `❌ Reddit API Error: Request Blocked ❗\nTrying Another Source...🐈` });
+            await new Promise(resolve => setTimeout(resolve, 1000));
             return await getCatOrDogRandomly();
         }
 
