@@ -202,7 +202,6 @@ async function main() {
                 iconURL: "https://awwbot.pages.dev/img/aww-logo.png",
             })
             .setTitle("aww")
-            .setDescription(`**URL**: <${url}>`)
             .setImage(`${url}`)
             .setColor("#f500e0")
             .setFooter({
@@ -227,7 +226,7 @@ async function main() {
 
         if (response?.status !== 200) {
             await interaction.editReply({ content: `❌ Reddit API Error: Request Blocked ❗\nTrying Another Source...🐈` });
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 2000));
             return await getCatOrDogRandomly();
         }
 
