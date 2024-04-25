@@ -221,11 +221,14 @@ async function main() {
     }
 
     async function getRedditPost(interaction) {
-        const response = await axios.get('https://www.reddit.com/r/aww/hot.json').catch(async (e) => {
-            await interaction.editReply({ content: `❌ Reddit API Error: Request Blocked.\nTrying Another Source...🐈` });
+        const response = await axios.get('https://www.reddit.com/r/aww/hot.json').catch((e) => {
             console.log(chalk.red(e));
-            return await getCatOrDogRandomly();
         });
+
+        if (response?.status !== 200) {
+            await interaction.editReply({ content: `❌ Reddit API Error: Request Blocked ❗\nTrying Another Source...🐈` });
+            return await getCatOrDogRandomly();
+        }
 
         const data = await response.data;
         const posts = data.data.children.map((post) => {
@@ -259,8 +262,11 @@ async function main() {
             }
         }).catch((e) => {
             console.log(chalk.red(e));
-            return "https://awwbot.pages.dev/img/aww-logo.png";
         });
+
+        if (response?.status !== 200) {
+            return "https://awwbot.pages.dev/img/aww-logo.png";
+        }
 
         const data = await response.data;
         const imgUrl = data[0].url;
@@ -274,8 +280,11 @@ async function main() {
             }
         }).catch((e) => {
             console.log(chalk.red(e));
-            return "https://awwbot.pages.dev/img/aww-logo.png";
         });
+
+        if (response?.status !== 200) {
+            return "https://awwbot.pages.dev/img/aww-logo.png";
+        }
 
         const data = await response.data;
         const imgUrl = data[0].url;
