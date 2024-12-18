@@ -1,1 +1,14 @@
+.git/
+.github/
+
+.vscode/
+.idea/
+
 node_modules/
+
+# website/
+
+README.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE

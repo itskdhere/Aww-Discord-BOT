@@ -1,15 +1,17 @@
 FROM node:20-alpine
 
+RUN adduser --disabled-password --gecos "" aww
+
+USER aww
+
 WORKDIR /app
 
-COPY package*.json ./
+COPY --chown=aww:aww package*.json ./
 
-RUN npm install
+RUN npm ci --only=production
 
-COPY . .
+COPY --chown=aww:aww . .
 
-ENV PORT=7860
+EXPOSE ${PORT}
 
-EXPOSE 7860
-
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
