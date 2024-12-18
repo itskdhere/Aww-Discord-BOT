@@ -9,13 +9,6 @@ Aww-Discord-BOT
 </p>
 
 <p align="center">
-<a href="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml" title="CodeQL">
-<img src="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/codeql.yml/badge.svg" alt="CodeQL" >
-</a>
-<a href="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml" title="OSSAR">
-<img src="https://github.com/itskdhere/Aww-Discord-BOT/actions/workflows/ossar.yml/badge.svg" alt="OSSAR" >
-</a>
-</a>
 <a href="" title="">
 <img src="https://img.shields.io/uptimerobot/ratio/7/m793605180-c9948f4473c7bb729cb6f66d?label=Bot%20Uptime" alt="Up-Time" >
 </a>
@@ -37,22 +30,26 @@ Aww-Discord-BOT
 
 ### Setup:
 
-- Clone The Repository:
+-   Clone The Repository:
+
 ```bash
 git clone https://github.com/itskdhere/Aww-Discord-BOT
 ```
 
-- Navigate To The Directory:
+-   Navigate To The Directory:
+
 ```bash
 cd Aww-Discord-BOT
 ```
 
-- Copy `.env.example` To `.env`:
+-   Copy `.env.example` To `.env`:
+
 ```bash
 cp .env.example .env
 ```
 
-- Edit `.env` File:
+-   Edit `.env` File:
+
 ```bash
 nano .env
 ```
@@ -61,33 +58,43 @@ nano .env
 
 #### Using Docker:
 
-- Build:
+-   Build:
+
 ```bash
 docker build -t itskdhere/aww:2.1.3 .
 ```
 
-- Run:
+-   Run:
+
 ```bash
 docker run -d -p 7860:7860 --name aww itskdhere/aww:2.1.3
 ```
 
 #### Without Using Docker:
-- Install Dependencies:
+
+-   Install Dependencies:
+
 ```bash
 npm install
 ```
-- Run The Bot:
+
+-   Run The Bot:
+
 ```bash
 npm run start
 ```
+
 or, Run In Background:
+
 ```bash
 npm i pm2 -g
 npm run start
 ```
 
 ---
+
 ## Others:
+
 ##### 📝 License: [MIT](https://github.com/itskdhere/Aww-Discord-BOT/blob/main/LICENSE)
 
 ##### 🎨 Cat <a href="https://www.freepik.com/free-vector/set-vector-cute-cartoonish-cats-isolated-white-background_26373379.htm#query=cat%20svg&position=6&from_view=search&track=sph">Image by callmetak</a> on Freepik
